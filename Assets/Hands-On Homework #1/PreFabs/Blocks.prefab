@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2348201738744256745}
   - component: {fileID: 8578060145635043054}
   - component: {fileID: 1292099443660123741}
-  - component: {fileID: 8410602887917409315}
+  - component: {fileID: 5698881530998405167}
   m_Layer: 0
   m_Name: Blocks
   m_TagString: Untagged
@@ -115,7 +115,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -130,16 +130,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.32, y: 0.32}
+    - - {x: -0.23074532, y: 0.3516481}
+      - {x: -0.32, y: 0.32}
       - {x: -0.32, y: -0.32}
       - {x: 0.31, y: -0.32}
       - {x: 0.32, y: -0.29999998}
       - {x: 0.32, y: -0.14999999}
-      - {x: -0.14999999, y: 0.32}
+      - {x: -0.14999999, y: 0.3219152}
   m_UseDelaunayMesh: 0
---- !u!249 &8410602887917409315
-AreaEffector2D:
-  serializedVersion: 2
+--- !u!252 &5698881530998405167
+SurfaceEffector2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -150,10 +150,9 @@ AreaEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_UseGlobalAngle: 0
-  m_ForceAngle: 0
-  m_ForceMagnitude: 10
-  m_ForceVariation: 0
-  m_ForceTarget: 0
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_Speed: 1
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1

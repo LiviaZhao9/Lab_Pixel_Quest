@@ -55,7 +55,8 @@ public class GeoQuestCpm : MonoBehaviour
             transform.position += new Vector3(0, -1, 0);
         }
         */
-        private void onTriggerEnter2D(Collider2D collision)
+    }
+        private void OnTriggerEnter2D(Collider2D collision)
         {
         Debug.Log("hit");
         }

@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class HW2PlayerShoot : MonoBehaviour
+public class HW2PlayerMultiShoot : MonoBehaviour
 {
     public GameObject prefab;
     public Transform bulletTrash;
@@ -8,8 +10,9 @@ public class HW2PlayerShoot : MonoBehaviour
 
     private bool _canShoot = true;
 
-    private const float Timer = 0.5f;
-    private float _currentTime = 0.5f;
+    private const float Timer = 2f;
+    private float _currentTime = 2f;
+    private int _bulletCount = 0;
     private void Update()
     {
         TimerMethod();
@@ -32,13 +35,18 @@ public class HW2PlayerShoot : MonoBehaviour
 
     private void Shoot()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && _canShoot)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && _canShoot)
         {
             GameObject bullet = Instantiate(prefab, bulletSpawn.position, Quaternion.identity);
 
             bullet.transform.SetParent(bulletTrash);
 
-            _canShoot = false;
+            _bulletCount++;
+
+            if (_bulletCount > 10)
+            {
+                _canShoot = false;
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
@@ -11,6 +12,7 @@ public class GeoQuestCpm : MonoBehaviour
     private Rigidbody2D rb;
     public int speed = 5;
     public string nextLevel = "Scene_2";
+    public SpriteRenderer targetSpriteRenderer;
 
     void Start()
     {
@@ -24,8 +26,6 @@ public class GeoQuestCpm : MonoBehaviour
 
         float xInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
-
-
 
         /*
 
@@ -57,8 +57,25 @@ public class GeoQuestCpm : MonoBehaviour
             transform.position += new Vector3(0, -1, 0);
         }
         */
+
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            targetSpriteRenderer.color = Color.red;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            targetSpriteRenderer.color = Color.blue;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            targetSpriteRenderer.color = Color.yellow;
+        }
+
+
     }
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
         {
             switch (collision.tag)
             {
@@ -74,12 +91,13 @@ public class GeoQuestCpm : MonoBehaviour
                         SceneManager.LoadScene(nextLevel);
                         break;
                     }
-            case "Teleporter":
-                {
-                    transform.position = new Vector3(50, 0, 0);
-                    break;
-                }
+                case "Teleporter":
+                    {
+                        transform.position = new Vector3(50, 0, 0);
+                        break;
+                    }
         }
         
+
         }
 }

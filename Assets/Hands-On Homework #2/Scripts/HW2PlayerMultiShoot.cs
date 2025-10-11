@@ -10,10 +10,12 @@ public class HW2PlayerMultiShoot : MonoBehaviour
 
     private bool _canShoot = true;
 
-    private const float Timer = 2f;
-    private float _currentTime = 2f;
+    private const float Timer = 3f;
+    private float _currentTime = 3f;
     private int _bulletCount = 0;
+    private int _bulletMax = 5;
     private void Update()
+  
     {
         TimerMethod();
         Shoot();
@@ -29,6 +31,8 @@ public class HW2PlayerMultiShoot : MonoBehaviour
             {
                 _canShoot = true;
                 _currentTime = Timer;
+                _bulletCount = 0;
+
             }
         }
     }
@@ -43,7 +47,7 @@ public class HW2PlayerMultiShoot : MonoBehaviour
 
             _bulletCount++;
 
-            if (_bulletCount > 10)
+            if (_bulletCount > _bulletMax)
             {
                 _canShoot = false;
             }

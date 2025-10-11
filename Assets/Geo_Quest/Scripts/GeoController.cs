@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GeoQuestCpm : MonoBehaviour
 {
     // Start is called before the first frame update
     private Rigidbody2D rb;
     public int speed = 5;
+    public string nextLevel = "Scene_2";
 
     void Start()
     {
@@ -58,6 +60,26 @@ public class GeoQuestCpm : MonoBehaviour
     }
         private void OnTriggerEnter2D(Collider2D collision)
         {
-        Debug.Log("hit");
+            switch (collision.tag)
+            {
+                case "Death":
+                    {
+                        string thisLevel = SceneManager.GetActiveScene().name;
+                        SceneManager.LoadScene(thisLevel);
+                        break;
+                    }
+
+                case "Finish":
+                    {   
+                        SceneManager.LoadScene(nextLevel);
+                        break;
+                    }
+            case "Teleporter":
+                {
+                    transform.position = new Vector3(50, 0, 0);
+                    break;
+                }
+        }
+        
         }
 }

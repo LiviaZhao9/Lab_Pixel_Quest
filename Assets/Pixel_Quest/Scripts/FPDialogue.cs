@@ -16,10 +16,12 @@ public class FPDialogue : MonoBehaviour
 
     private void Start()
     {
-        _talkText = GameObject.Find(HW3Structs.GameObjects.talkText).GetComponent<TextMeshProUGUI>();
+        _talkText = GameObject.Find(FPStructs.GameObjects.talkText).GetComponent<TextMeshProUGUI>();
 
-        _talkPanel = GameObject.Find(HW3Structs.GameObjects.talkPanel);
+        _talkPanel = GameObject.Find(FPStructs.GameObjects.talkPanel);
         _talkPanel.SetActive(false);
+        SetCanSpeak(false);
+
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class FPDialogue : MonoBehaviour
     {
         if (isSpeaking && Input.GetKeyDown(KeyCode.E))
         {
-            if (dialogue.Count - 1 == _talkIndex)
+            if (dialogue.Count - 1 <= _talkIndex)
             {
                 isSpeaking = false;
                 _talkPanel.SetActive(false);
@@ -39,9 +41,10 @@ public class FPDialogue : MonoBehaviour
                 _talkText.text = dialogue[_talkIndex];
             }
         }
-        else if (canSpeak && Input.GetKeyDown(KeyCode.E))
+        else if (canSpeak && !isSpeaking)
         {
             isSpeaking = true;
+            canSpeak = false;
             _talkPanel.SetActive(true);
             _talkIndex = 0;
             nameText.text = names[_talkIndex];
@@ -67,4 +70,5 @@ public class FPDialogue : MonoBehaviour
         names.Clear();
         names.AddRange(newNames);
     }
+
 }

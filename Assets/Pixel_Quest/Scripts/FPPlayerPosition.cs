@@ -17,4 +17,6 @@ public class FCPlayerPosition : MonoBehaviour
         mousePosition.z = 0;
         transform.position = mousePosition;
     }
+
+
 }

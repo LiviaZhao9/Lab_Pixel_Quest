@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class HW3PlayerDialogue : MonoBehaviour
+public class FPDialogue : MonoBehaviour
 {
     public List<string> dialogue = new List<string>();
     public List<string> names= new List<string>();

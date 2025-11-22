@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class HW3NPC : MonoBehaviour
+public class FPNPC : MonoBehaviour
 {
 
     public List<string> dialogue = new List<string>();
@@ -18,6 +18,7 @@ public class HW3NPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       
         if(collision.tag == HW3Structs.Tags.playerTag)
         {
             _talkIcon.SetActive(true);

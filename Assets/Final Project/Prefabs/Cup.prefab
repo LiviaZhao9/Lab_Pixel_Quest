@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8562422524488692445}
+  - component: {fileID: 8163437298215299457}
   m_Layer: 0
-  m_Name: CupPrefab
+  m_Name: Cup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,6 +33,18 @@ Transform:
   - {fileID: 588082090423565670}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8163437298215299457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470949740974762252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30e1ec3662445345bd61e01bb92888f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5116515379883737380
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588082090423565670}
   m_Layer: 0
-  m_Name: Cup
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

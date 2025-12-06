@@ -7,19 +7,19 @@ public class FPCupPickup : MonoBehaviour
     public GameObject currentCup;
     public GameObject cupPrefab;
     public Transform Player;
-    public bool hasCup = false;
+    public Transform CoffeeArea;
+    public Transform SodaArea;
+
 
     // Start is called before the first frame update
     private void OnMouseDown()
     {
-        Debug.Log("hi");
-        if (hasCup == false)
+        if (Player.transform.childCount < 1 && CoffeeArea.transform.childCount < 1 && SodaArea.transform.childCount < 1)
         {
-            currentCup = Instantiate(cupPrefab, Player.position, Quaternion.identity);
-            currentCup.transform.SetParent(Player);
-            hasCup = true;
-
+           currentCup = Instantiate(cupPrefab, Player.position, Quaternion.identity);
+           currentCup.transform.SetParent(Player);
         }
+
     }
 
     // Update is called once per frame

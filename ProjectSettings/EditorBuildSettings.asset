@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Final Project/Scene/SceneTalking2.unity
     guid: a3ed700fb8a5b0c4d886dcee6a43e2b3
+  - enabled: 1
+    path: Assets/Final Project/Scene/SceneBrewing.unity
+    guid: 2bff25f0480d1694a954c11878fffe60
   m_configObjects: {}

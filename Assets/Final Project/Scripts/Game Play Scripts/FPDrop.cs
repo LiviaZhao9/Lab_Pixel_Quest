@@ -24,6 +24,13 @@ public class Drop : MonoBehaviour
             Player.transform.GetChild(0).SetParent(transform);
             transform.GetChild(transform.childCount - 1).localPosition = Vector3.zero;
         }
+        else if (isInDropZone && transform.childCount > 0)
+        {
+            transform.GetChild(0).SetParent(Player.transform);
+            Player.transform.GetChild(0).localPosition = Vector3.zero;
+
+        }
+
     }
 
 }

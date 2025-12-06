@@ -1120,34 +1120,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - ' Hi marine! This place looks great, I love the decorations. It looks so real
-    and so comfortable.'
-  - "Heyyy, Welcome to Galapagos Cafe !! I haven\u2019t seen you around the town,
-    where are you from?"
-  - 'I came from another continent and I saw this beautiful place. It reminds me
-    of when I was a little turtle and my friend and I used to go to a cafe, where
-    they sold such good Mocha. '
-  - What a good time!!
-  - 'Ohhhh I can tell that Mocha is still your favorite drink, but what happened
-    to your friend in the end ? '
-  - "My dear friend, he migrated to another continent and I didn\u2019t have time
-    to say good-bye to him.I really don\u2019t know where he is right now, but I
-    know that one day I will see him again. "
-  - 'Hey folk, to be honest who knows, one day you would find him in this same cafe
-    and just remember the joyful moments you got with him. Be positive my friend
-    and stay gold. '
-  - 'Thank you chef, I really appreciate your advice and I''m thankful that you listen
-    to me. Nice Mocha by the way. See ya next time !! '
+  - 'Heyyyy Cheftie!!How have you been ?  '
+  - 'Heyyy Doplhiii!! I have been great than ever and you know ... .always trying
+    to give the customer what they wants.What about you dear friend ? '
+  - 'So do I, dude !! I have been traveling a lot from different continents and oceans.
+    I returned back to my native continent and I went to visit my family and friends. '
+  - "Woww, that\u2019s impressive.I am proud of you. You have been known all over
+    the world. What else did you do in your native country ? "
+  - "I stayed for around 2 or 3 days and I tried to find my best friend from my childhood,
+    but I didn\u2019t find him at home.Then, I started asking his neighbors and they
+    said that he migrated to another continent. They don\u2019t have any idea of
+    which continent he went to. "
+  - 'That is bad to hear about your adventure.Besides that  I think I could help
+    you with your favorite latte,man. '
+  - 'No cheftie, today is not the day. I will like a mocha, same as my friend used
+    to like. '
+  - "Dolphin I think I might know who your friend is and I can tell that he is here,
+    right now. It\u2019s the turtle that is right over there in the corner. "
   names:
-  - Turtle
+  - 
   - Chef
-  - 'Turtle '
-  - Tutle
+  - 
+  - 'Chef '
+  - 
+  - 'Chef '
+  - 
   - Chef
-  - 'Turtle '
-  - Chef
-  - Turtle
-  nextScene: SceneTalking_3
+  nextScene: 
   fPDialogue: {fileID: 1004659731}
 --- !u!58 &1872858821
 CircleCollider2D:

@@ -315,15 +315,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
-  m_sharedMaterial: {fileID: 3910608052489921811, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 661011270f8d3204b8e626fa9b0d8065, type: 2}
+  m_sharedMaterial: {fileID: -5632733488900620866, guid: 661011270f8d3204b8e626fa9b0d8065, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4291754479
+  m_fontColor: {r: 0.93725497, g: 0.97647065, b: 0.8078432, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -340,10 +340,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 36
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 72
   m_fontSizeMax: 200
   m_fontStyle: 0
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -907,7 +907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21484515, g: 0.38754174, b: 0.6415094, a: 1}
+  m_Color: {r: 0.019579923, g: 0.25895697, b: 0.3773585, a: 0.79607844}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -991,15 +991,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
-  m_sharedMaterial: {fileID: 3910608052489921811, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc37f30a580fe7e4a8bb157cc1f36e34, type: 2}
+  m_sharedMaterial: {fileID: -4043300862479393529, guid: cc37f30a580fe7e4a8bb157cc1f36e34, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4292082851
+  m_fontColor: {r: 0.6392157, g: 0.98823535, b: 0.82745105, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.15
+  m_fontSize: 69.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1196,14 +1196,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - Qoah thsi is a new dialouge
-  - so hi!
-  - yea hi
-  - i cant belive
+  - Hii folks!! I feel great today!!
+  - 'What is the reason for this feeling, my friend? '
+  - Today I catch up with some new guys that arrived in town, and they love to drink
+    cappuccino with a little sugar, and a great amount of whipping cream every morning,
+    too!
+  - 'As we were talking I found out that we have the same taste in almost everything
+    and it feels good to randomly find people like that. '
+  - 'Yes Jellyfish, I will do your favorite right now and I feel good to hear that
+    you find someone like that these days!! '
+  - Thanks, see ya!
   names:
-  - Chef
+  - Jelly
   - Chef
   - Jelly
+  - Jelly
+  - Chef
   - Jelly
   nextScene: SceneTalking2
   fPDialogue: {fileID: 1004659731}

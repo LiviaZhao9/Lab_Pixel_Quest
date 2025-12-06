@@ -314,15 +314,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
-  m_sharedMaterial: {fileID: 3910608052489921811, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 661011270f8d3204b8e626fa9b0d8065, type: 2}
+  m_sharedMaterial: {fileID: -5632733488900620866, guid: 661011270f8d3204b8e626fa9b0d8065, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4291754479
+  m_fontColor: {r: 0.93725497, g: 0.97647065, b: 0.8078432, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -339,10 +339,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 36
+  m_fontSize: 61
+  m_fontSizeBase: 61
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 72
   m_fontSizeMax: 200
   m_fontStyle: 0
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21484515, g: 0.38754174, b: 0.6415094, a: 1}
+  m_Color: {r: 0.019607844, g: 0.25882354, b: 0.3764706, a: 0.79607844}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -915,15 +915,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
-  m_sharedMaterial: {fileID: 3910608052489921811, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc37f30a580fe7e4a8bb157cc1f36e34, type: 2}
+  m_sharedMaterial: {fileID: -4043300862479393529, guid: cc37f30a580fe7e4a8bb157cc1f36e34, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4291492789
+  m_fontColor: {r: 0.70980394, g: 0.9843138, b: 0.79215693, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -940,7 +940,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.15
+  m_fontSize: 69.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1120,15 +1120,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - Hello!
-  - Hi
-  - Your awsome
-  - and lso cool
+  - ' Hi marine! This place looks great, I love the decorations. It looks so real
+    and so comfortable.'
+  - "Heyyy, Welcome to Galapagos Cafe !! I haven\u2019t seen you around the town,
+    where are you from?"
+  - 'I came from another continent and I saw this beautiful place. It reminds me
+    of when I was a little turtle and my friend and I used to go to a cafe, where
+    they sold such good Mocha. '
+  - What a good time!!
+  - 'Ohhhh I can tell that Mocha is still your favorite drink, but what happened
+    to your friend in the end ? '
+  - "My dear friend, he migrated to another continent and I didn\u2019t have time
+    to say good-bye to him.I really don\u2019t know where he is right now, but I
+    know that one day I will see him again. "
+  - 'Hey folk, to be honest who knows, one day you would find him in this same cafe
+    and just remember the joyful moments you got with him. Be positive my friend
+    and stay gold. '
+  - 'Thank you chef, I really appreciate your advice and I''m thankful that you listen
+    to me. Nice Mocha by the way. See ya next time !! '
   names:
-  - Jelly
+  - Turtle
   - Chef
-  - Jelly
-  - Jelly
+  - 'Turtle '
+  - 'Chef '
+  - 'Turtle '
+  - 'Chef '
+  - 'Turtle '
+  - Chef
   nextScene: 
   fPDialogue: {fileID: 1004659731}
 --- !u!58 &1872858821

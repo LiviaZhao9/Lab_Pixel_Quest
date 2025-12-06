@@ -8,6 +8,7 @@ public class FPNPC : MonoBehaviour
 
     public List<string> dialogue = new List<string>();
     public List<string> names = new List<string>();
+    public string nextScene = "";
     public FPDialogue fPDialogue;
     //private GameObject _talkIcon;
 
@@ -19,7 +20,7 @@ public class FPNPC : MonoBehaviour
 
     private void OnMouseDown()
     {
-        fPDialogue.CopyDialogue(dialogue, names);
+        fPDialogue.CopyDialogue(dialogue, names, nextScene);
         fPDialogue.SetCanSpeak(true);
 
     }

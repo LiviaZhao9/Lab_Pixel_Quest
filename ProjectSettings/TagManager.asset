@@ -12,6 +12,8 @@ TagManager:
   - TalkZone
   - Bullet
   - Teleporter
+  - PourArea
+  - Ice
   layers:
   - Default
   - TransparentFX

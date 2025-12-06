@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FPDialogue : MonoBehaviour
 {
     public List<string> dialogue = new List<string>();
     public List<string> names= new List<string>();
+    public string nextScene = "";
     private bool canSpeak = false;
     private bool isSpeaking = false;
     private GameObject _talkPanel;
     private TextMeshProUGUI _talkText;
     public TextMeshProUGUI nameText;
     private int _talkIndex = 0;
-
+    public GameObject order; 
+        
     private void Start()
     {
         _talkText = GameObject.Find(FPStructs.GameObjects.talkText).GetComponent<TextMeshProUGUI>();
@@ -33,6 +36,8 @@ public class FPDialogue : MonoBehaviour
             {
                 isSpeaking = false;
                 _talkPanel.SetActive(false);
+                StartCoroutine(LoadScene());    
+
             }
             else
             {
@@ -62,13 +67,21 @@ public class FPDialogue : MonoBehaviour
         return isSpeaking;
     }
 
-    public void CopyDialogue(List<string> newDialogue, List<string> newNames)
+    public void CopyDialogue(List<string> newDialogue, List<string> newNames, string newScene)
     {
         dialogue.Clear();
         dialogue.AddRange(newDialogue);
 
         names.Clear();
         names.AddRange(newNames);
+        nextScene = newScene;
     }
 
+
+    private IEnumerator LoadScene()
+    {
+        order.SetActive(true);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(nextScene);
+    }
 }

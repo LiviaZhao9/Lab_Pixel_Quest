@@ -592,6 +592,7 @@ MonoBehaviour:
   names: []
   nextScene: 
   nameText: {fileID: 1224828512}
+  order: {fileID: 0}
 --- !u!4 &1004659732
 Transform:
   m_ObjectHideFlags: 0

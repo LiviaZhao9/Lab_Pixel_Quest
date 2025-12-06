@@ -590,7 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: []
   names: []
-  nextScene: 
+  nextScene: SceneTalking_5
   nameText: {fileID: 1224828512}
   order: {fileID: 0}
 --- !u!4 &1004659732
@@ -1120,32 +1120,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Heyyyy Cheftie!!How have you been ?  '
-  - 'Heyyy Doplhiii!! I have been great than ever and you know ... .always trying
-    to give the customer what they wants.What about you dear friend ? '
-  - 'So do I, dude !! I have been traveling a lot from different continents and oceans.
-    I returned back to my native continent and I went to visit my family and friends. '
-  - "Woww, that\u2019s impressive.I am proud of you. You have been known all over
-    the world. What else did you do in your native country ? "
-  - "I stayed for around 2 or 3 days and I tried to find my best friend from my childhood,
-    but I didn\u2019t find him at home.Then, I started asking his neighbors and they
-    said that he migrated to another continent. They don\u2019t have any idea of
-    which continent he went to. "
-  - 'That is bad to hear about your adventure.Besides that  I think I could help
-    you with your favorite latte,man. '
-  - 'No cheftie, today is not the day. I will like a mocha, same as my friend used
-    to like. '
-  - "Dolphin I think I might know who your friend is and I can tell that he is here,
-    right now. It\u2019s the turtle that is right over there in the corner. "
+  - "Hello there ! I just feel so tired that I even know if I\u2019m awake."
+  - 'Hello folk!! I feel bad for you, what happened to you ? and how can I help you? '
+  - 'Friend, work has been so hard and I can even have a mind to think about what
+    I am doing. '
+  - "Hey, it\u2019s okay dude. I can get your favorite and you will be fine  "
+  - Well, I would like to have a little time to think about it, but I really want
+    a normal coffee
   names:
-  - 
+  - Blobfish
   - Chef
-  - 
+  - Blobfish
   - 'Chef '
-  - 
-  - 'Chef '
-  - 
-  - Chef
+  - Blobfish
   nextScene: 
   fPDialogue: {fileID: 1004659731}
 --- !u!58 &1872858821

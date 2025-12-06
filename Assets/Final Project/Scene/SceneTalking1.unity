@@ -1213,7 +1213,7 @@ MonoBehaviour:
   - Jelly
   - Chef
   - Jelly
-  nextScene: SceneTalking2
+  nextScene: SceneTalking_2
   fPDialogue: {fileID: 1004659731}
 --- !u!58 &1872858821
 CircleCollider2D:

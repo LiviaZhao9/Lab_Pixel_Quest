@@ -314,8 +314,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
-  m_sharedMaterial: {fileID: 3910608052489921811, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 661011270f8d3204b8e626fa9b0d8065, type: 2}
+  m_sharedMaterial: {fileID: -5632733488900620866, guid: 661011270f8d3204b8e626fa9b0d8065, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -339,10 +339,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 36
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 72
   m_fontSizeMax: 200
   m_fontStyle: 0
@@ -913,8 +913,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
-  m_sharedMaterial: {fileID: 3910608052489921811, guid: 00159b9726a52834f875f3cfd4b2f7c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc37f30a580fe7e4a8bb157cc1f36e34, type: 2}
+  m_sharedMaterial: {fileID: -4043300862479393529, guid: cc37f30a580fe7e4a8bb157cc1f36e34, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -938,7 +938,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.15
+  m_fontSize: 69.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1120,9 +1120,9 @@ MonoBehaviour:
   dialogue:
   - Hii folks!! I feel grat today!!
   - What is the reason for this feeling, my friend?
-  - ' Today I catch up with some new guys that arrived in town, and they especially
-    love to drink cappuccino with a little sugar, and a great amount of whipping
-    cream every morning like me'
+  - ' Today I catch up with some new guys that arrived in town. They especially love
+    to drink cappuccino with a little sugar, and a great amount of whipping cream
+    every morning too!'
   - ' As we were talking I found out that we have the same taste in almost everything
     and it feels good to randomly find people like that.  '
   - 'Yes Jellyfish, I will do your favorite right now and I feel good to hear that

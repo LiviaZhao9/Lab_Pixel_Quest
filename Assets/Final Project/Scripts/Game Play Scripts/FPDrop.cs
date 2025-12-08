@@ -5,6 +5,8 @@ public class Drop : MonoBehaviour
 {
     public bool isInDropZone = false;
     public GameObject Player;
+    public GameObject Minigame;
+
 
     public void OnMouseEnter()
     {
@@ -19,10 +21,13 @@ public class Drop : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(isInDropZone && Player.transform.childCount > 0)
+
+        if (isInDropZone && Player.transform.childCount > 0)
         {
             Player.transform.GetChild(0).SetParent(transform);
             transform.GetChild(transform.childCount - 1).localPosition = Vector3.zero;
+
+            Minigame.SetActive(true);
         }
         else if (isInDropZone && transform.childCount > 0)
         {

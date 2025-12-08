@@ -6,28 +6,68 @@ public class FPAddIngredients : MonoBehaviour
 {
     // Start is called before the first frame update
     public Transform Player;
+    public Transform MinigamePanel;
+
+    public float updateDuration = 1f;
+
     private void OnMouseDown()
     {
         string tag = gameObject.tag;
-        Transform cup = Player.transform.GetChild(0);
-        FPCupStats stats =  cup.GetComponent<FPCupStats>();
+        FPHoldBarMinigame minigame = MinigamePanel.GetComponent<FPHoldBarMinigame>();
 
-        if (stats.totalIngredients < 4)
+        if (Player.transform.childCount >= 1)
         {
+            FPCupStats stats = Player.transform.GetChild(0).GetComponent<FPCupStats>();
+
             switch (tag)
             {
                 case "Ice":
                     {
-                        stats.ice += 1;
-                        stats.totalIngredients += 1;
+                        if (stats.ice < 2)
+                        {
+                            stats.ice += 1;
+
+                        }
+                        break;
+                    }
+                case "Coffee":
+                    {
+                        if (stats.totalIngredients < 4)
+                        {
+                            if (minigame.ingredientStat > 4 - stats.totalIngredients)
+                            {
+                                stats.coffee += 4 - stats.totalIngredients;
+                                stats.totalIngredients += 4 - stats.totalIngredients;
+                            }
+                            else
+                            {
+                                stats.coffee += minigame.ingredientStat;
+                                stats.totalIngredients += minigame.ingredientStat;
+                            }
+                        }
+                        break;
+                    }
+
+                case "Soda":
+                    {
+                        if (stats.totalIngredients < 4)
+                        {
+                            if (minigame.ingredientStat > 4 - stats.totalIngredients)
+                            {
+                                stats.soda += 4 - stats.totalIngredients;
+                                stats.totalIngredients += 4 - stats.totalIngredients;
+                            }
+                            else
+                            {
+                                stats.soda += minigame.ingredientStat;
+                                stats.totalIngredients += minigame.ingredientStat;
+                            }
+                        }
                         break;
                     }
             }
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
+

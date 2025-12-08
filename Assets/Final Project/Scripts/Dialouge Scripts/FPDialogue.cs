@@ -8,15 +8,20 @@ public class FPDialogue : MonoBehaviour
 {
     public List<string> dialogue = new List<string>();
     public List<string> names= new List<string>();
+    public List<Sprite> spriteList = new List<Sprite>();
     public string nextScene = "";
+
     private bool canSpeak = false;
     private bool isSpeaking = false;
+
     private GameObject _talkPanel;
     private TextMeshProUGUI _talkText;
     public TextMeshProUGUI nameText;
     private int _talkIndex = 0;
-    public GameObject order; 
-        
+    public GameObject order;
+    public GameObject npc;
+    private SpriteRenderer npcSprite;
+
     private void Start()
     {
         _talkText = GameObject.Find(FPStructs.GameObjects.talkText).GetComponent<TextMeshProUGUI>();
@@ -24,6 +29,8 @@ public class FPDialogue : MonoBehaviour
         _talkPanel = GameObject.Find(FPStructs.GameObjects.talkPanel);
         _talkPanel.SetActive(false);
         SetCanSpeak(false);
+
+        npcSprite = npc.transform.GetChild(0).GetComponent<SpriteRenderer>();
 
     }
 
@@ -44,6 +51,7 @@ public class FPDialogue : MonoBehaviour
                 _talkIndex++;
                 nameText.text = names[_talkIndex];
                 _talkText.text = dialogue[_talkIndex];
+                npcSprite.sprite = spriteList[_talkIndex];
             }
         }
         else if (canSpeak && !isSpeaking)
@@ -53,8 +61,10 @@ public class FPDialogue : MonoBehaviour
             _talkPanel.SetActive(true);
             _talkIndex = 0;
             nameText.text = names[_talkIndex];
-            _talkText.text = dialogue[_talkIndex]; 
+            _talkText.text = dialogue[_talkIndex];
+            npcSprite.sprite = spriteList[_talkIndex];
         }
+       
     }
 
     public void SetCanSpeak(bool newCanSpeak)
@@ -67,13 +77,17 @@ public class FPDialogue : MonoBehaviour
         return isSpeaking;
     }
 
-    public void CopyDialogue(List<string> newDialogue, List<string> newNames, string newScene)
+    public void CopyDialogue(List<string> newDialogue, List<string> newNames, string newScene, List<Sprite> newSprite)
     {
         dialogue.Clear();
         dialogue.AddRange(newDialogue);
 
         names.Clear();
         names.AddRange(newNames);
+
+        spriteList.Clear();
+        spriteList.AddRange(newSprite);
+
         nextScene = newScene;
     }
 

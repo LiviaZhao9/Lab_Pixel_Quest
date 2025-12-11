@@ -9,6 +9,7 @@ public class FPAddIngredients : MonoBehaviour
     public Transform MinigamePanel;
 
     public float updateDuration = 1f;
+    private int maxIngredients = 4;
 
     private void OnMouseDown()
     {
@@ -32,12 +33,12 @@ public class FPAddIngredients : MonoBehaviour
                     }
                 case "Coffee":
                     {
-                        if (stats.totalIngredients < 4)
+                        if (stats.totalIngredients < maxIngredients)
                         {
-                            if (minigame.ingredientStat > 4 - stats.totalIngredients)
+                            if (minigame.ingredientStat > maxIngredients - stats.totalIngredients)
                             {
-                                stats.coffee += 4 - stats.totalIngredients;
-                                stats.totalIngredients += 4 - stats.totalIngredients;
+                                stats.coffee += maxIngredients - stats.totalIngredients;
+                                stats.totalIngredients += maxIngredients - stats.totalIngredients;
                             }
                             else
                             {
@@ -50,12 +51,12 @@ public class FPAddIngredients : MonoBehaviour
 
                 case "Soda":
                     {
-                        if (stats.totalIngredients < 4)
+                        if (stats.totalIngredients < maxIngredients)
                         {
-                            if (minigame.ingredientStat > 4 - stats.totalIngredients)
+                            if (minigame.ingredientStat > maxIngredients - stats.totalIngredients)
                             {
-                                stats.soda += 4 - stats.totalIngredients;
-                                stats.totalIngredients += 4 - stats.totalIngredients;
+                                stats.soda += maxIngredients - stats.totalIngredients;
+                                stats.totalIngredients += maxIngredients - stats.totalIngredients;
                             }
                             else
                             {

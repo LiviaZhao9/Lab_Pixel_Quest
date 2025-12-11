@@ -782,7 +782,7 @@ MonoBehaviour:
   dialogue: []
   names: []
   spriteList: []
-  nextScene: 
+  nextScene: SceneTalking2
   nameText: {fileID: 1224828512}
   order: {fileID: 1029685785}
   npc: {fileID: 1444785975}
@@ -888,55 +888,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1052839117
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1052839119}
-  - component: {fileID: 1052839118}
-  m_Layer: 0
-  m_Name: OrderData
-  m_TagString: OrderData
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1052839118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052839117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a38beedf30bc136469062516a8bf01f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredCoffeeSoda: 0
-  requiredIce: 0
-  score: 0
-  maxScore: 2
-  orderPlaced: 0
---- !u!4 &1052839119
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052839117}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9270863, y: 0.34931624, z: 0.043480884}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1081339462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,33 +1461,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - Hii folks!! I feel great today!!
-  - 'What is the reason for this feeling, my friend? '
-  - Today I catch up with some new guys that arrived in town, and they love to drink
-    cappuccino with a little sugar, and a great amount of whipping cream every morning,
-    too!
-  - 'As we were talking I found out that we have the same taste in almost everything
-    and it feels good to randomly find people like that. '
-  - 'Yes Jellyfish, I will do your favorite right now and I feel good to hear that
-    you find someone like that these days!! '
-  - Thanks, see ya!
+  - See you then!
+  - Bye Bye!
   names:
   - Jelly
-  - Chef
-  - Jelly
   - Jelly
   - Chef
-  - Jelly
-  - Jelly
   spriteList:
   - {fileID: 21300000, guid: fe1f261ecf6724bbaa38eeda6ac30599, type: 3}
   - {fileID: 21300000, guid: c21aa41910e394c0986602a865e1ef74, type: 3}
   - {fileID: 21300000, guid: fe1f261ecf6724bbaa38eeda6ac30599, type: 3}
-  - {fileID: 21300000, guid: fe1f261ecf6724bbaa38eeda6ac30599, type: 3}
-  - {fileID: 21300000, guid: c21aa41910e394c0986602a865e1ef74, type: 3}
-  - {fileID: 21300000, guid: fe1f261ecf6724bbaa38eeda6ac30599, type: 3}
-  - {fileID: 21300000, guid: fe1f261ecf6724bbaa38eeda6ac30599, type: 3}
-  nextScene: SceneBrewing
+  nextScene: SceneTalking2
   fPDialogue: {fileID: 1004659731}
 --- !u!61 &1444785977
 BoxCollider2D:
@@ -1716,4 +1651,3 @@ SceneRoots:
   - {fileID: 1444785978}
   - {fileID: 1004659732}
   - {fileID: 1120909106}
-  - {fileID: 1052839119}

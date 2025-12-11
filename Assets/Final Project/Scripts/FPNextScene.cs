@@ -5,10 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class FPNextScene : MonoBehaviour
 {
-    public string nextScene = "";
+    public List<string> sceneList;
+    public static int currentSceneIndex = 0;
     // Start is called before the first frame update
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(nextScene);
+        Debug.Log(currentSceneIndex + sceneList[currentSceneIndex]);
+        GameObject orderObj = GameObject.FindGameObjectWithTag("OrderData");
+        if (orderObj != null)
+        {
+            FPOrderData orderData = orderObj.GetComponent<FPOrderData>();
+            if (orderData != null)
+            {
+
+                orderData.CheckScore();
+ 
+            }
+        }
+
+        SceneManager.LoadScene(sceneList[currentSceneIndex]);
+
+        currentSceneIndex++;
+        if (currentSceneIndex >= sceneList.Count)
+            currentSceneIndex = 0; 
+
     }
 }

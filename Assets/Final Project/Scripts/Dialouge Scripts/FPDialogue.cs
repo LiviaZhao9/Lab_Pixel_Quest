@@ -21,6 +21,7 @@ public class FPDialogue : MonoBehaviour
     public GameObject order;
     public GameObject npc;
     private SpriteRenderer npcSprite;
+    private FPOrderData orderData;
 
     private void Start()
     {
@@ -37,13 +38,21 @@ public class FPDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameObject orderObj = GameObject.FindGameObjectWithTag("OrderData");
+        if (orderObj != null)
+        {
+            orderData = orderObj.GetComponent<FPOrderData>();
+        }
+
         if (isSpeaking && Input.GetKeyDown(KeyCode.E))
         {
             if (dialogue.Count - 1 <= _talkIndex)
             {
                 isSpeaking = false;
                 _talkPanel.SetActive(false);
-                StartCoroutine(LoadScene());    
+                orderData.orderPlaced = !orderData.orderPlaced;
+                SceneManager.LoadScene(nextScene);
+                //StartCoroutine(LoadScene());    
 
             }
             else

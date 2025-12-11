@@ -467,6 +467,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437956074}
   m_CullTransparentMesh: 1
+--- !u!1 &611303378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 611303380}
+  - component: {fileID: 611303379}
+  m_Layer: 0
+  m_Name: OrderData
+  m_TagString: OrderData
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &611303379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611303378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38beedf30bc136469062516a8bf01f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredCoffeeSoda: 0
+  requiredIce: 0
+  score: 0
+  maxScore: 2
+  orderPlaced: 0
+--- !u!4 &611303380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611303378}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9270863, y: 0.34931624, z: 0.043480884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809465610
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +811,7 @@ GameObject:
   - component: {fileID: 1004659733}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1418,8 +1467,9 @@ MonoBehaviour:
   - 'Turtle '
   - Chef
   - Turtle
+  - Turtle
   spriteList: []
-  nextScene: SceneTalking3
+  nextScene: SceneBrewing
   fPDialogue: {fileID: 1004659731}
 --- !u!4 &1294611000
 Transform:
@@ -1669,3 +1719,4 @@ SceneRoots:
   - {fileID: 1294611000}
   - {fileID: 1004659732}
   - {fileID: 1120909106}
+  - {fileID: 611303380}

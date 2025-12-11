@@ -16,6 +16,7 @@ TagManager:
   - Ice
   - Coffee
   - Soda
+  - OrderData
   layers:
   - Default
   - TransparentFX

@@ -13,7 +13,7 @@ public class FPHoldBarMinigame : MonoBehaviour
     public float moveSpeed = 0.2f;
     private int i = 0;
 
-    private bool gameActive = false;
+    public bool gameActive = false;
 
     public Transform Player;
 
@@ -30,7 +30,7 @@ public class FPHoldBarMinigame : MonoBehaviour
 
     private void Update()
     {
-
+        
         if (!gameActive && Input.GetKeyDown(KeyCode.Space))
         {
             ingredientStat = 0;

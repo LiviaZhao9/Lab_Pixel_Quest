@@ -12,8 +12,9 @@ public class FPNPC : MonoBehaviour
     public string nextScene = "";
 
     private FPOrderData order;
-
     public FPDialogue fPDialogue;
+
+    public GameObject mouseSprite;
     //private GameObject _talkIcon;
 
     private void Update()
@@ -29,7 +30,8 @@ public class FPNPC : MonoBehaviour
 
     private void OnMouseDown()
     {
-      
+        mouseSprite.SetActive(false);
+
         fPDialogue.CopyDialogue(dialogue, names, nextScene, spriteList);
         fPDialogue.SetCanSpeak(true);
 

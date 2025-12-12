@@ -17,7 +17,7 @@ public class FPPlayerPosition : MonoBehaviour
 
         if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
         {
-            return;
+                return;
         }
 
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

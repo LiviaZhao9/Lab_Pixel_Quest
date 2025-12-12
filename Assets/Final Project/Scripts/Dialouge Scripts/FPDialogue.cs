@@ -55,6 +55,14 @@ public class FPDialogue : MonoBehaviour
                 //StartCoroutine(LoadScene());    
 
             }
+            else if (dialogue.Count - 2 == _talkIndex)
+            {
+                if(orderData.orderPlaced == false) { _talkText.color = new Color(37, 217, 223, 255); }
+                _talkIndex++;
+                nameText.text = names[_talkIndex];
+                _talkText.text = dialogue[_talkIndex];
+                npcSprite.sprite = spriteList[_talkIndex];
+            }
             else
             {
                 _talkIndex++;

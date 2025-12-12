@@ -10,7 +10,7 @@ public class FPAddIngredients : MonoBehaviour
 
     public float updateDuration = 1f;
     private int maxIngredients = 4;
-
+ 
     private void OnMouseDown()
     {
         string tag = gameObject.tag;

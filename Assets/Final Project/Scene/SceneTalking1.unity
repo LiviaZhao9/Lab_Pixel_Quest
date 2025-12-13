@@ -2027,14 +2027,13 @@ MonoBehaviour:
   dialogue:
   - Hii folks!! I feel great today!!
   - 'What is the reason for this feeling, my friend? '
-  - Today I catch up with some new guys that arrived in town, and they love to drink
-    cappuccino with a little sugar, and a great amount of whipping cream every morning,
-    too!
-  - 'As we were talking I found out that we have the same taste in almost everything
-    and it feels good to randomly find people like that. '
-  - 'Yes Jellyfish, I will do your favorite right now and I feel good to hear that
-    you find someone like that these days!! '
-  - Thanks, see ya!
+  - Today I caght up with some new neighbors that just arrived in town. We heard
+    about your new cafe and the topic of drinks came up.
+  - 'As we were talking I found out that we have the same taste in almost everything.
+    Its always nice to randomly find people like that. '
+  - 'Yes Jellyfish, I''ll whip something up for you right now! Its awsome to hear
+    that you found someone like that these days!! '
+  - Thank you! Hmm..
   names:
   - Jelly
   - Chef

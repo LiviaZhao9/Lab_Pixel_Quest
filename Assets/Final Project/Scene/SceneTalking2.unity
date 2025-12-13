@@ -1741,24 +1741,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - ' Hi marine! This place looks great, I love the decorations. It looks so real
-    and so comfortable.'
+  - ' Hi marine! This place looks great, I love the decorations. It lookin real authentic
+    and comfortable.'
   - "Heyyy, Welcome to Galapagos Cafe !! I haven\u2019t seen you around the town,
     where are you from?"
-  - 'I came from another continent and I saw this beautiful place. It reminds me
-    of when I was a little turtle and my friend and I used to go to a cafe, where
+  - 'I came from another continent! When I saw this beautiful place it reminded me
+    of when I was just a little turtle. My friends and I used to go to a cafe, where
     they sold such good Mocha. '
   - What a good time!!
   - 'Ohhhh I can tell that Mocha is still your favorite drink, but what happened
     to your friend in the end ? '
-  - "My dear friend, he migrated to another continent and I didn\u2019t have time
-    to say good-bye to him.I really don\u2019t know where he is right now, but I
-    know that one day I will see him again. "
-  - 'Hey folk, to be honest who knows, one day you would find him in this same cafe
-    and just remember the joyful moments you got with him. Be positive my friend
-    and stay gold. '
-  - 'Thank you chef, I really appreciate your advice and I''m thankful that you listen
-    to me. Nice Mocha by the way. See ya next time !! '
+  - "My dear friend, she migrated to another continent and I didn\u2019t time to
+    say good-bye to her. I really don\u2019t know where she is right now, but I know
+    that one day I will see her again. "
+  - Hey man, honestly who knows, one day you might just find her in this same cafe.
+    Just remember the joyful moments you emjoyed with her. Be positive my friend.
+  - Thank you chef, I really appreciate your advice and I'm thankful that you listen
+    to me. Let me think..
   names:
   - Turtle
   - Chef

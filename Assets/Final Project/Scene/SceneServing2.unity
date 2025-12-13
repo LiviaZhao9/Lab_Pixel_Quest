@@ -2072,7 +2072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - Thanks for listening
+  - Thanks for listening again!
   - No Problem!
   names:
   - Turtle

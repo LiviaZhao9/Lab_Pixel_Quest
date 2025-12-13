@@ -689,6 +689,7 @@ MonoBehaviour:
   ingredientStat: 0
   barSlider: {fileID: 2057976952}
   moveSpeed: 0.3
+  gameActive: 0
   Player: {fileID: 1074125221}
 --- !u!1 &537645627
 GameObject:

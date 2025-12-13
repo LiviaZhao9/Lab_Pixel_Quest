@@ -1917,9 +1917,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Heyyyy Cheftie!!How have you been ?  '
-  - 'Heyyy Doplhiii!! I have been great than ever and you know ... .always trying
-    to give the customer what they wants.What about you dear friend ? '
+  - 'Heyyyy there !!How have you been ?  '
+  - 'Heyyy Doplhiii!! I have been doing better than ever! You know ... .always trying
+    to give the customer what they want. What about you dear friend ? '
   - 'So do I, dude !! I have been traveling a lot from different continents and oceans.
     I returned back to my native continent and I went to visit my family and friends. '
   - "Woww, that\u2019s impressive.I am proud of you. You have been known all over
@@ -1928,12 +1928,9 @@ MonoBehaviour:
     didn\u2019t find him at home."
   - "Then, I started asking to his neighbors and they said that he migrated to other
     continent. They don\u2019t know  where he went to."
-  - 'That is bad to hear about your adventure.Besides that  I think I could help
-    you with your favorite latte,man. '
-  - 'No cheftie, today is not the day. I will like a mocha, same as my friend used
-    to like. '
-  - "Dolphin I think I might know who your friend is and I can tell that he is here,
-    right now. It\u2019s the turtle that is right over there in the corner. "
+  - That is bad to hear about your adventure.Besides that  I think I nice drink could
+    help.
+  - Your right..
   names:
   - Dolphin
   - Chef
@@ -1943,7 +1940,6 @@ MonoBehaviour:
   - Dolphin
   - 'Chef '
   - Dolphin
-  - Chef
   - Dolphin
   spriteList:
   - {fileID: 21300000, guid: bbf5420e8752be847a6dec67d66dfbb3, type: 3}
@@ -1954,7 +1950,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bbf5420e8752be847a6dec67d66dfbb3, type: 3}
   - {fileID: 21300000, guid: 4e4ccf94675269a42a771540c2c1abef, type: 3}
   - {fileID: 21300000, guid: bbf5420e8752be847a6dec67d66dfbb3, type: 3}
-  - {fileID: 21300000, guid: 4e4ccf94675269a42a771540c2c1abef, type: 3}
   - {fileID: 21300000, guid: bbf5420e8752be847a6dec67d66dfbb3, type: 3}
   nextScene: SceneBrewing
   fPDialogue: {fileID: 1004659731}

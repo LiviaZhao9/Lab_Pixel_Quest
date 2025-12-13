@@ -1895,14 +1895,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - See ya later aligator
+  - Wait Dolphin..
+  - I think I might know who your friend is and I can say that he's here right now.
+    Is it the turtle sitting with the jellyfish in the corner?
+  - No way.. IT IS HIM!
   names:
   - Dolphin
+  - Chef
+  - Chef
   - Dolphin
   spriteList:
   - {fileID: 21300000, guid: bbf5420e8752be847a6dec67d66dfbb3, type: 3}
+  - {fileID: 21300000, guid: 4e4ccf94675269a42a771540c2c1abef, type: 3}
+  - {fileID: 21300000, guid: 4e4ccf94675269a42a771540c2c1abef, type: 3}
   - {fileID: 21300000, guid: bbf5420e8752be847a6dec67d66dfbb3, type: 3}
-  nextScene: SceneBrewing
+  nextScene: SceneEnding
   fPDialogue: {fileID: 1004659731}
   mouseSprite: {fileID: 1187917893}
 --- !u!4 &1579685019
